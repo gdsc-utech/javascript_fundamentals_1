@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reference to CSS styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- reference to Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Social Feed</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Social Feed</h1>
+
+        <!-- CARD -->
+        <div class="card">
+            <!-- picsum returns a random image -->
+            <img src="https://picsum.photos/500" alt="">
+            <div class="content">
+                <div class="button-bar">
+                    <!-- add onclick listeners -->
+                    <button onclick="handleLikeClick(0)" class="like-btn"><i class="bi-heart-fill"></i> Like</button>
+                    <button onclick="handleCommentClick(0)" class="comment-btn"><i class="bi-chat-fill"></i> Comment</button>
+                    <button onclick="handleShareClick(0)" class="share-btn"><i class="bi-send-fill"></i> Share</button>
+                </div>
+                <div class="text">
+                    <h2>Check this out!</h2>
+                </div>
+                <div class="comments">
+                </div>
+            </div>
+        </div>
+        <!-- CARD -->
+        <div class="card">
+            <img src="https://picsum.photos/600" alt="">
+            <div class="content">
+                <div class="button-bar">
+                    <button onclick="handleLikeClick(1)" class="like-btn"><i class="bi-heart-fill"></i> Like</button>
+                    <button onclick="handleCommentClick(1)" class="comment-btn"><i class="bi-chat-fill"></i> Comment</button>
+                    <button onclick="handleShareClick(1)" class="share-btn"><i class="bi-send-fill"></i> Share</button>
+                </div>
+                <div class="text">
+                    <h2>Life at its best</h2>
+                </div>
+                <div class="comments">
+                </div>
+            </div>
+        </div>
+        <!-- CARD -->
+        <div class="card">
+            <img src="https://picsum.photos/700" alt="">
+            <div class="content">
+                <div class="button-bar">
+                    <button onclick="handleLikeClick(2)" class="like-btn"><i class="bi-heart-fill"></i> Like</button>
+                    <button onclick="handleCommentClick(2)" class="comment-btn"><i class="bi-chat-fill"></i> Comment</button>
+                    <button onclick="handleShareClick(2)" class="share-btn"><i class="bi-send-fill"></i> Share</button>
+                </div>
+                <div class="text">
+                    <h2>This is SUPER exciting</h2>
+                </div>
+                <div class="comments">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- reference to our JavaScript code -->
+    <script src="script.js"></script>
+</body>
+</html>
